@@ -5,3 +5,10 @@
 
 # virtualenv
 venv
+
+# cache
+.pytest_cache
+
+# python temps
+__pycache__
+*.pyc
