@@ -1,0 +1,7 @@
+# editors files
+.vscode
+*.swp
+*.swo
+
+# virtualenv
+venv
