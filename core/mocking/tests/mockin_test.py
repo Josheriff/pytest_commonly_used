@@ -19,9 +19,17 @@ def test_collaboration():
     assert request_mock.get.called
 
 
-def test_collaboration():
+def test_collaboration_with_argument():
     request_mock = MagicMock()
 
     get_pokemons_number(request_mock)
 
     assert request_mock.get.called_with('https://pokeapi.co/api/v2/pokemon')
+
+
+def test_collaboration_called_once():
+    request_mock = MagicMock()
+
+    get_pokemons_number(request_mock)
+
+    assert request_mock.get.called_once()
